@@ -1,0 +1,23 @@
+button {
+  background: none;
+  border: none;
+  height: 100%;
+  cursor: pointer;
+}
+
+.main {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1.5px solid var(--keyColor);
+  background: var(--background);
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  color: var(--textColor);
+  font-size: 28px;
+  line-height: 2rem;
+  margin: 0;
+}

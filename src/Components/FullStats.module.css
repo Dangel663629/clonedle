@@ -1,0 +1,93 @@
+.header {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  color: var(--textColor);
+  align-self: flex-end;
+  background: none;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  align-self: flex-start;
+}
+
+.headerTitle {
+  text-transform: uppercase;
+  flex: 1;
+  margin: 0;
+  line-height: 3rem;
+}
+
+.fullStatsHeader {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1.5px solid var(--keyColor);
+  padding: 0.25rem;
+  border: 1.5px solid var(--keyColor);
+  border-bottom: none;
+}
+
+.fullStatsWrapper {
+  border: 1.5px solid var(--keyColor);
+  border-bottom: none;
+  max-height: 16.5rem;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  padding-top: 0.2rem;
+  font-size: 14px;
+}
+
+.fullStatsButton,
+.fullStatsLast {
+  color: var(--textColor);
+  border-right: 1px solid var(--keyColor);
+  height: 1.5rem;
+  flex: 1;
+  font-weight: bold;
+}
+
+.fullStatsButton:hover,
+.fullStatsLast:hover {
+  background: var(--keyColor);
+}
+
+.fullStatsLast {
+  border-right: none;
+}
+
+.statItem {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1.5px solid var(--keyColor);
+  padding: 0.25rem;
+}
+
+.statGame,
+.statWord,
+.statResultWon,
+.statResultLost,
+.statResultOngoing,
+.statRow {
+  flex: 1;
+  padding: 0.1rem;
+  text-transform: capitalize;
+}
+
+.statWord {
+  text-transform: uppercase;
+}
+
+.statResultWon {
+  color: rgb(62, 160, 38);
+}
+.statResultLost {
+  color: rgb(185, 27, 27);
+}
+.statResultOngoing {
+  color: rgb(197, 167, 34);
+}

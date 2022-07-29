@@ -1,0 +1,82 @@
+.keyboardMain {
+  padding: 0.15rem;
+  border-radius: 0.5rem;
+  margin: auto;
+  width: 98%;
+  user-select: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.keyboardRow1,
+.keyboardRow2,
+.keyboardRow3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.keyboardLetterRow1,
+.keyboardLetterRow2,
+.keyboardLetterRow3,
+.keyboardEnterBackspace,
+.keyboardLetterRow1Wrong,
+.keyboardLetterRow2Wrong,
+.keyboardLetterRow3Wrong,
+.keyboardLetterRow1Close,
+.keyboardLetterRow2Close,
+.keyboardLetterRow3Close,
+.keyboardLetterRow1Correct,
+.keyboardLetterRow2Correct,
+.keyboardLetterRow3Correct {
+  background-color: var(--keyColor);
+  color: var(--textColor);
+  border-radius: 0.4rem;
+  margin: 0.1rem;
+  height: 2.8rem;
+  text-align: center;
+  line-height: 2.8rem;
+  cursor: pointer;
+}
+
+.keyboardLetterRow1,
+.keyboardLetterRow2,
+.keyboardLetterRow3 {
+  width: 100%;
+}
+
+.keyboardLetterRow1Wrong,
+.keyboardLetterRow2Wrong,
+.keyboardLetterRow3Wrong {
+  width: 100%;
+  background-color: var(--keyColorWrong);
+  color: white;
+}
+
+.keyboardLetterRow1Close,
+.keyboardLetterRow2Close,
+.keyboardLetterRow3Close {
+  width: 100%;
+  background-color: rgb(207, 181, 65);
+  color: white;
+}
+
+.keyboardLetterRow1Correct,
+.keyboardLetterRow2Correct,
+.keyboardLetterRow3Correct {
+  width: 100%;
+  background-color: rgb(101, 184, 80);
+  color: white;
+}
+
+.keyboardEnterBackspace {
+  text-align: right;
+  padding: 0rem 0.35rem;
+  width: 100%;
+  font-size: 20px;
+}
+
+@media (min-width: 650px) {
+  .keyboardMain {
+    width: 40rem;
+  }
+}

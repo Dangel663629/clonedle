@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px groove gray;
+  width: 90%;
+  align-self: center;
+  user-select: none;
+}
+
+.text {
+  margin: 20px 0px 0px 0px;
+  font-size: 20px;
+}
+
+.secondaryText {
+  color: gray;
+  margin: 0px 0px 20px 0px;
+  font-size: 12px;
+}
+
+.rightSide {
+  margin-left: 1rem;
+  align-self: center;
+}
+
+a {
+  color: gray;
+}
+
+@media (min-width: 666px) {
+  .main {
+    width: 600px;
+  }
+}

@@ -1,0 +1,14 @@
+.stat {
+  flex: 1;
+  margin: 0rem 0.2rem;
+}
+
+.statNumber {
+  font-size: 35px;
+  margin: 0;
+}
+
+.statDescription {
+  font-size: 12px;
+  margin: 0;
+}

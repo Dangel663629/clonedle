@@ -1,0 +1,43 @@
+.header {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  color: var(--textColor);
+  align-self: flex-end;
+  background: none;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  align-self: flex-start;
+}
+
+.headerTitle {
+  flex: 1;
+  line-height: 3rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+.textBlock p {
+  margin: 0.5rem 0rem;
+  font-size: 15px;
+  text-align: left;
+}
+
+.textBlock {
+  margin: 0;
+  border-bottom: 1.5px solid var(--keyColor);
+}
+
+.exampleBlock {
+  margin-bottom: -0.5rem;
+  font-size: 15px;
+  text-align: left;
+}

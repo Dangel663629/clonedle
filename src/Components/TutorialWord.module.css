@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+  margin: 0rem 0rem;
+}
+
+.letter,
+.letterCorrect,
+.letterClose,
+.letterWrong {
+  --buttonsize: 2.6rem;
+
+  color: var(--textColor);
+  margin: 0.1rem;
+  box-shadow: inset 0px 0px 0px 2px var(--keyBorder);
+  height: var(--buttonsize);
+  width: var(--buttonsize);
+  line-height: var(--buttonsize);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.letterCorrect {
+  background-color: rgb(101, 184, 80);
+  color: white;
+  box-shadow: none;
+}
+
+.letterClose {
+  background-color: rgb(207, 181, 65);
+  box-shadow: none;
+  color: white;
+}
+
+.letterWrong {
+  background-color: var(--keyColorWrong);
+  box-shadow: none;
+  color: white;
+}

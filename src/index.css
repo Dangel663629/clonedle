@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --background: white;
+  --backgroundSecondary: rgb(250, 250, 250);
+  --backgroundOverlay: rgba(255, 255, 255, 0.35);
+  --textColor: black;
+  --keyColor: lightgray;
+  --keyColorWrong: rgb(110, 110, 110);
+  --keyBorder: rgba(0, 0, 0, 0.25);
+  --keyBorderFilled: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] {
+  --background: rgb(20, 20, 20);
+  --backgroundSecondary: rgb(30, 30, 30);
+  --backgroundOverlay: rgba(0, 0, 0, 0.5);
+  --textColor: white;
+  --keyColor: gray;
+  --keyColorWrong: rgb(65, 65, 65);
+  --keyBorder: rgba(255, 255, 255, 0.25);
+  --keyBorderFilled: rgba(255, 255, 255, 0.35);
+}

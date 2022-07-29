@@ -1,0 +1,29 @@
+.guessWrapper {
+  display: flex;
+  margin: 0.35rem 1rem;
+  margin-left: -0.25rem;
+}
+
+.guessNumber {
+  flex: 1;
+  text-align: right;
+  margin-right: 0.3rem;
+}
+
+.guessBarOuter {
+  flex: 12;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(126, 126, 126, 0.658);
+}
+
+.guessBarFill {
+  background: rgb(109, 109, 109);
+  border-radius: 0.45rem;
+  color: white;
+  text-align: right;
+}
+
+.barText {
+  margin: 0;
+  margin-right: 0.15rem;
+}

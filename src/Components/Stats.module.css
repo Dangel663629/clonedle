@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 0.75rem;
+  margin-bottom: -0.25rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 0rem 0.75rem;
+}
+
+.footer svg {
+  font-size: 18px;
+}

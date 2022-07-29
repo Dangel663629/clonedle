@@ -1,0 +1,288 @@
+.mainWrapper {
+  align-self: center;
+}
+
+.main,
+.mainShake {
+  display: flex;
+  width: 100%;
+  user-select: none;
+  justify-content: space-between;
+}
+
+.mainShake {
+  animation: shake 600ms forwards ease-in-out;
+}
+
+.result {
+  color: var(--background);
+  background: var(--textColor);
+  font-weight: bold;
+  position: fixed;
+  z-index: 2;
+  top: 15%;
+  left: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.6rem;
+}
+
+.letter,
+.letterFilled,
+.letterClose,
+.letterCorrect,
+.letterWrong,
+.letterBounce,
+.letterCorrectSlow,
+.letterCloseSlow,
+.letterWrongSlow {
+  --buttonsize: 3rem;
+
+  color: var(--textColor);
+  margin: 0.15rem;
+  box-shadow: inset 0px 0px 0px 2px var(--keyBorder);
+  height: var(--buttonsize);
+  width: var(--buttonsize);
+  line-height: var(--buttonsize);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: wrong 450ms both ease-out;
+}
+
+.letterFilled {
+  box-shadow: inset 0px 0px 0px 2px var(--keyBorderFilled);
+  animation: none;
+}
+
+.letterCorrectSlow {
+  animation: correct 450ms both ease-out;
+}
+
+.letterCloseSlow {
+  animation: close 450ms both ease-out;
+}
+
+.letterWrongSlow {
+  animation: wrong 450ms both ease-out;
+}
+
+.letter {
+  animation: none;
+}
+
+.letterBounce {
+  box-shadow: inset 0px 0px 0px 2px var(--keyBorderFilled);
+  animation: bounce 75ms forwards ease-in;
+}
+
+.letterCorrect {
+  animation: correct 450ms both ease-out;
+}
+
+.letterClose {
+  animation: close 450ms both ease-out;
+}
+
+.Delay1 {
+  animation-delay: 87.5ms;
+}
+
+.Delay2 {
+  animation-delay: 175ms;
+}
+
+.Delay3 {
+  animation-delay: 262.5ms;
+}
+
+.Delay4 {
+  animation-delay: 350ms;
+}
+
+.Delay1Slow {
+  animation-delay: 325ms;
+}
+
+.Delay2Slow {
+  animation-delay: 650ms;
+}
+
+.Delay3Slow {
+  animation-delay: 975ms;
+}
+
+.Delay4Slow {
+  animation-delay: 1300ms;
+}
+
+@keyframes wrong {
+  0% {
+    box-shadow: inset 0px 0px 0px 2px var(--keyBorderFilled);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  49.99% {
+    box-shadow: inset 0px 0px 0px 2px var(--keyBorderFilled);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    transform: rotateX(90deg);
+    background-color: var(--keyColorWrong);
+    box-shadow: none;
+    color: white;
+  }
+
+  100% {
+    background-color: var(--keyColorWrong);
+    box-shadow: none;
+    color: white;
+  }
+}
+
+@keyframes correct {
+  0% {
+    box-shadow: inset 0px 0px 0px 2px var(--keyBorderFilled);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  49.99% {
+    box-shadow: inset 0px 0px 0px 2px var(--keyBorderFilled);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    transform: rotateX(90deg);
+    background-color: rgb(101, 184, 80);
+    box-shadow: none;
+    color: white;
+  }
+
+  100% {
+    background-color: rgb(101, 184, 80);
+    box-shadow: none;
+    color: white;
+  }
+}
+
+@keyframes close {
+  0% {
+    box-shadow: inset 0px 0px 0px 2px var(--keyBorderFilled);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  49.99% {
+    box-shadow: inset 0px 0px 0px 2px var(--keyBorderFilled);
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  50% {
+    transform: rotateX(90deg);
+    background-color: rgb(207, 181, 65);
+    box-shadow: none;
+    color: white;
+  }
+
+  100% {
+    background-color: rgb(207, 181, 65);
+    box-shadow: none;
+    color: white;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0%);
+  }
+
+  14.2% {
+    transform: translateX(-0.5rem);
+  }
+
+  28.4% {
+    transform: translateX(0.5rem);
+  }
+
+  42.6% {
+    transform: translateX(-0.35rem);
+  }
+
+  56.8% {
+    transform: translateX(0.35rem);
+  }
+
+  71% {
+    transform: translateX(-0.35rem);
+  }
+
+  85.2% {
+    transform: translateX(0.35rem);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@media (min-width: 350px) and (min-height: 650px) {
+  .letter,
+  .letterFilled,
+  .letterClose,
+  .letterCorrect,
+  .letterWrong,
+  .letterBounce,
+  .letterCorrectSlow,
+  .letterCloseSlow,
+  .letterWrongSlow {
+    --buttonsize: 3.5rem;
+    margin: 0.2rem;
+  }
+}
+
+@media (min-width: 500px) and (min-height: 750px) {
+  .letter,
+  .letterFilled,
+  .letterClose,
+  .letterCorrect,
+  .letterWrong,
+  .letterBounce,
+  .letterCorrectSlow,
+  .letterCloseSlow,
+  .letterWrongSlow {
+    --buttonsize: 4.5rem;
+    margin: 0.3rem;
+  }
+}
+
+@media (min-width: 800px) and (min-height: 800px) {
+  .letter,
+  .letterFilled,
+  .letterClose,
+  .letterCorrect,
+  .letterWrong,
+  .letterBounce,
+  .letterCorrectSlow,
+  .letterCloseSlow,
+  .letterWrongSlow {
+    --buttonsize: 5rem;
+    margin: 0.4rem;
+  }
+}
