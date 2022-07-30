@@ -472,30 +472,28 @@ const App = () => {
         showStatsHandler={showStatsHandler}
         showTutorialHandler={showTutorialHandler}
       />
-      <div className={classes.mainWrapper}>
-        <div className={classes.wordBlocks}>
-          <WordRow
-            userGuess={userGuess}
-            userGuessArray={userGuessArray}
-            colorCodeArray={colorCodeArray}
-            row={row}
-            shakeRow={shakeRow}
-            randomWord={randomWord}
-            blockInputs={blockInputs}
-            lost={lost}
-          />
-        </div>
-        <div>
-          <KeyboardOverlay
-            userGuess={userGuess}
-            userGuessArray={userGuessArray}
-            setUserGuess={setUserGuess}
-            submitWord={submitWord}
-            keyboardColors={keyboardColors}
-            gameOver={gameOver}
-            blockInputs={blockInputs}
-          />
-        </div>
+      <div className={classes.wordBlocks}>
+        <WordRow
+          userGuess={userGuess}
+          userGuessArray={userGuessArray}
+          colorCodeArray={colorCodeArray}
+          row={row}
+          shakeRow={shakeRow}
+          randomWord={randomWord}
+          blockInputs={blockInputs}
+          lost={lost}
+        />
+      </div>
+      <div>
+        <KeyboardOverlay
+          userGuess={userGuess}
+          userGuessArray={userGuessArray}
+          setUserGuess={setUserGuess}
+          submitWord={submitWord}
+          keyboardColors={keyboardColors}
+          gameOver={gameOver}
+          blockInputs={blockInputs}
+        />
       </div>
       <ErrorOverlay
         show={showError}

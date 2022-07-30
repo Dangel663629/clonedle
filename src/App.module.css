@@ -2,19 +2,14 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   height: 100vh;
-}
-
-.mainWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 3.1rem);
   background: var(--background);
 }
 
 .wordBlocks {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
   display: flex;
   justify-content: center;
-  flex: 1;
 }
