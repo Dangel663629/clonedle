@@ -460,6 +460,13 @@ const App = () => {
     }
   }, []); //eslint-disable-line
 
+  //darkmode for mobile scroll
+  useLayoutEffect(() => {
+    if (darkmode === "dark")
+      document.body.style.backgroundColor = "rgb(20, 20, 20)";
+    else document.body.style.backgroundColor = "white";
+  }, [darkmode]);
+
   //start game
   useEffect(() => {
     if (randomWord === "") callWord();
