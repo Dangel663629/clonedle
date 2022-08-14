@@ -15,6 +15,7 @@
 }
 
 .result {
+  user-select: none;
   color: var(--background);
   background: var(--textColor);
   font-weight: bold;

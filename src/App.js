@@ -239,7 +239,8 @@ const App = () => {
         }
       });
       userWordGuess.forEach((e, index) => {
-        keyboardColorCode[e] = colorCodeHelper[index];
+        if (!(keyboardColorCode[e] >= colorCodeHelper[index]))
+          keyboardColorCode[e] = colorCodeHelper[index];
         if (colorCodeHelper[index] > 0) {
           keyboardColorCode[`${e}_index`].push(
             `${index}${colorCodeHelper[index]}`
